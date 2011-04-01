@@ -1,161 +1,6 @@
-Practice Guidelines
+= GSWoT Practice Guidelines =
 
-Gossamer Spider Web of Trust (GSWoT)
-
-Revision # Date       Editor      Notes
-
-001        2009-10-25 M. Daigle   Original Version
-
-002        2011-01-29 S. Blystone Removed Biglumber References
-
-
- 1.         Gossamer Spider Web of Trust (GSWoT) - The Organization
-
- 
-
-1.1         Gossamer Spider Web of Trust Top-Level Key
-
- 
-
-1.2         GSIntroducers - The Web of Introducers
-
- 
-
-1.2.1         Qualification of GSIntroducers
-
- 
-
-1.2.2         Identifying a GSWoT GSIntroducer
-
- 
-
-1.2.3         GSWoT GSIntroducer ID
-
- 
-
-1.3         Becoming a GSWoT GSIntroducer
-
- 
-
-1.3.1         Making Application
-
- 
-
-1.3.2         Binding the Application
-
- 
-
-1.4         Introduction of New GSIntroducer
-
- 
-
-1.5         Registrar and Review Committee
-
- 
-
-1.5.1         The Application Review Committee
-
- 
-
-1.5.2         The Registration Announcement
-
- 
-
-1.6         Installation of New GSIntroducer
-
- 
-
-1.7         Public Key Resources
-
- 
-
-1.7.1         Public Key "Etiquette"
-
- 
-
-1.7.2         Revocation
-
- 
-
-1.7.3         Resigned Keys
-
- 
-
-1.8         Confidentiality
-
- 
-
-1.9         Presence
-
- 
-
- 
-
-2.         Affiliates, Partners
-
- 
-
- 
-
-3.         Recognized Authorities
-
- 
-
-3.1         Dynamic List of Authorities
-
- 
-
- 
-
-4.         Certification by GSIntroducers (Key Signing)
-
- 
-
-4.1         Third Party Reliance
-
- 
-
-4.2         Technical Limitations
-
- 
-
-4.3         Signature Discrimination
-
- 
-
-4.4         Traditional Key Signing
-
- 
-
-4.5         Remote Certification
-
- 
-
-4.5.1         Limitations of Remote Certification
-
- 
-
-4.6         Multiple UserID's
-
- 
-
-4.7         Trust Signatures
-
- 
-
-4.7.1         Trust Signing of GSIntroducers
-
- 
-
- 
-
-5.         Policy Sharing
-
- 
-
- 
-
-===================================================================== Purpose
+== Purpose ==
 
 This document describes the procedures by which GSIntroducers will conduct the
 business of authentication and certification of Recognized and Non-Recognized
@@ -163,17 +8,7 @@ key owners; and to which they solemnly agree to be bound. This document also
 describes the function of the organization and the expectations placed upon the
 GSIntroducers.
 
- 
-
-Definitions
-
-[See  end of document]
-
- 
-
- 
-
-1. Gossamer Spider Web of Trust (GSWoT) - The Organization
+== 1. Gossamer Spider Web of Trust (GSWoT) - The Organization ==
 
 The Gossamer Spider Web of Trust is an innovative and progressive organization
 of PGP enthusiasts that strives to bring confidence to the OpenPGP community in
@@ -184,11 +19,7 @@ Certification Authorities into the PGP web of trust. The GSWoT extends a web of
 confidence that starts with its Web of Introducers (individually called,
 "GSIntroducers").
 
- 
-
- 
-
-1.1 Gossamer Spider Web of Trust Top-Level Key
+=== 1.1 Gossamer Spider Web of Trust Top-Level Key ===
 
 The GSWoT top-level key is used exclusively to certify the signing key of
 Recognized Authorities, Affiliates and individual GSIntroducers. The Gossamer
@@ -199,11 +30,7 @@ To install the Gossamer Spider Web of Trust vertically, the Gossamer Spider Web
 of Trust Top-Level Key must be imported into a compatible OpenPGP keyring and
 given explicit trust as an Introducer to a depth of no less than two (2).
 
- 
-
- 
-
-1.2 GSIntroducers - The Web of Introducers
+=== 1.2 GSIntroducers - The Web of Introducers ===
 
 The GSWoT Web of Introducers is established through reciprocal trust signing
 between GSIntroducers. Each GSIntroducer certifies the other as a Trusted
@@ -214,16 +41,12 @@ any one or more GSIntroducers as an Introducer either explicitly or through
 Hierarchal Trust established with the Gossamer Spider Web of Trust Top-Level
 Key to form a non-isolated set of Web of Trust relationships. The Web of
 Introducers is composed of key owners whose identity has been authenticated by
-process directly within the organization or by a Recognized Authority (see  
+process directly within the organization or by a Recognized Authority (see
 Section 3). Each GSIntroducer within the Web of Introducers has agreed to
 perform certifications of subscriber keys according to the guidelines outlined
 in this document.
 
- 
-
- 
-
-1.2.1 Qualification of GSIntroducers
+==== 1.2.1 Qualification of GSIntroducers ====
 
 GSIntroducers supporting the web of trust products specified in  Section 3,
 Notaries Public, and officers of organizations, commissions and other bodies
@@ -231,22 +54,14 @@ who are responsible for authentication of its members can make application to
 become a GSIntroducer. The latter may qualify to apply as Registrar under the
 Affiliate provision in  Section 2.
 
- 
-
- 
-
-1.2.2 Identifying a GSIntroducer
+==== 1.2.2 Identifying a GSIntroducer ====
 
 A GSIntroducer is recognized by the possession and access to a private key
 corresponding to a public key containing a userid that follows the naming
 convention as prescribed under  Section 1.2.3 and is certified by the Gossamer
 Spider Web of Trust Top-Level Key.
 
- 
-
- 
-
-1.2.3 GSIntroducer ID
+==== 1.2.3 GSIntroducer ID ====
 
 The GSIntroducer ID (GSID) is constructed to uniquely identify a GSIntroducer,
 and is composed of the member's full name, and an email address in the
@@ -268,11 +83,7 @@ The email part of the GSIntroducer ID (GSID) is an internal artifact and may
 not indicate a valid email address to relying parties. GSIntroducers may opt to
 enable their gswot.org mail service.
 
- 
-
- 
-
-1.3 Becoming a GSIntroducer
+=== 1.3 Becoming a GSIntroducer ===
 
 A person, organization or commercial entity can make application to have a
 signing key certified and entered into the Web of Introducers. Organizations
@@ -282,32 +93,20 @@ identified in  Section 3.1; or is a Notary Public in Canada or the United
 States; or has earned three (3) GSIntroducer certifications can make
 application to the Web of Introducers.
 
- 
-
- 
-
-1.3.1 Making Application
+=== 1.3.1 Making Application ===
 
 To make application to the Web of Introducers, the applicant will affirm to
 have read this document, and submitted an application such as is available from
-the official GSWoT home ( http://www.gswot.org).
+the official GSWoT home <http://www.gswot.org>.
 
- 
-
- 
-
-1.3.2 Binding the Application
+==== 1.3.2 Binding the Application ====
 
 Upon successful application (see  Section 1.5) the applicant will be requested
 to issue a Level 02 Trust Signature to the Gossamer Spider Web of Trust
 Top-Level Key. The signature will be reciprocated with a Level 01 Trust
 Signature issued by the Gossamer Spider Web of Trust Top-Level Key.
 
- 
-
- 
-
-1.4 Introduction of New GSIntroducer
+=== 1.4 Introduction of New GSIntroducer ===
 
 Upon successful completion of the application process, a new GSIntroducer is
 formally introduced into the Web of Introducers. The method of delivery of the
@@ -315,11 +114,7 @@ introduction may change from time to time, however the authentication of
 material and keys is to be considered critical and must comply with  Sections
 1.5 and  1.5.1.
 
- 
-
- 
-
-1.5 Registrar and Review Committee
+=== 1.5 Registrar and Review Committee ===
 
 The Registrar will receive and forward an application to the Application Review
 Committee. A new GSIntroducer will be installed only after a quorum of
@@ -329,14 +124,10 @@ signature applied to the applicant's public key to be included in the
 Registration Announcement. The Application Review Committee may initiate the
 exchange of signatures with the new GSIntroducer upon reception of the
 Registration Announcement, and the new member should strive to reciprocate all
-trust signatures included in the Registration Announcement without delay. See  
+trust signatures included in the Registration Announcement without delay. See
 Section 4.7.1, "Trust Signing of GSIntroducers" for further details.
 
- 
-
- 
-
-1.5.1 The Application Review Committee
+==== 1.5.1 The Application Review Committee ====
 
 The Review Committee is comprised of not fewer than five (5) active
 GSIntroducers who have volunteered to review registration applications.
@@ -358,11 +149,7 @@ sent at midnight UTC on the calendar day under UTC at the time of submission
 (ie, a document sent at Jan 01 23:00 EDT (Jan 02 04:00 UTC) is deemed sent at
 Jan 02 24:00 UTC). Expiry and maturity occur at midnight UTC.
 
- 
-
- 
-
-1.5.2 The Registration Announcement
+==== 1.5.2 The Registration Announcement ====
 
 The Registration Announcement serves to introduce a new GSIntroducer to the Web
 of Introducers. The document will include information describing the new
@@ -371,11 +158,7 @@ certified by the Gossamer Spider Web of Trust Top-Level Key. An additional copy
 of the public key will contain the certifications of the GSIntroducers
 responsible for reviewing the application.
 
- 
-
- 
-
-1.6 Installation of New GSIntroducer
+=== 1.6 Installation of New GSIntroducer ===
 
 Upon acceptance into the Web of Introducers, a new GSIntroducer will accept and
 maintain a subscription to the announcement mail list.
@@ -392,12 +175,12 @@ The following is a guide to key exchange:
 Top-Level Key. The userid matching the GSIntroducer's application form must be
 signed.
 
-   a. GSID
-   b. Proper name, and enrolled email address
-   c. Proper name only (free-form userid)
-   d. Proper name, and other email address
+	a. GSID
+	b. Proper name, and enrolled email address
+	c. Proper name only (free-form userid)
+	d. Proper name, and other email address
 
-   *See  Sections 4.6 and  4.7.1 of Practice Guidelines
+	*See  Sections 4.6 and  4.7.1 of Practice Guidelines
 
 Sign only userid's that you have validated yourself and/or userid's that have
 been certified by the Gossamer Spider Web of Trust Top-Level Key. Typically,
@@ -411,26 +194,20 @@ mail.
 
 4. Update your public key to a PGPnet Keyserver.
 
-   http://pgp.surfnet.nl (also ldap on port 11370)
-   http://pgp.mit.edu
+	http://pgp.surfnet.nl (also ldap on port 11370)
+	http://pgp.mit.edu
 
- 
+=== 1.7 Public Key Resources ===
 
-1.7 Public Key Resources
+All GSIntroducers should update their public key to a PGPnet key server.
 
- All GSIntroducers should update their public key to a PGPnet key server.
-
-   http://wwwkeys.pgp.net
+	http://wwwkeys.pgp.net
 
 GSIntroducers are recommended to maintain GSIntroducer keys on their local
 keyring according to the cautions described in  Section 4.2 ("Technical
 Limitations").
 
- 
-
- 
-
-1.7.1 Public Key "Etiquette"
+==== 1.7.1 Public Key "Etiquette" ====
 
 It is commonly perceived to be unacceptable to publish another person's public
 key certificate to a publicly accessible key server without the express consent
@@ -438,11 +215,7 @@ of the public key owner. GSIntroducers are urged to respect this rule and
 verify their application preferences prevent the automatic submission of public
 keys to a key server (ie, after applying a certification signature).
 
- 
-
- 
-
-1.7.2 Revocation
+==== 1.7.2 Revocation ====
 
 Revocation of a GSIntroducer's key must be submitted to the announcement mail
 list (see  Section 1.8) and a PGPnet public key server (see  Section 1.7).
@@ -456,13 +229,9 @@ reciprocal signatures is thus reserved for cases of a GSIntroducer being
 ejected from the organization for breach of trust or other disobedience to the
 guidelines as established in this document.
 
- 
+==== 1.7.3 Resigned Keys ====
 
- 
-
-1.7.3 Resigned Keys
-
- GSIntroducers resigned from the Gossamer Spider Web of Trust will be
+GSIntroducers resigned from the Gossamer Spider Web of Trust will be
 disconnected from the organizational trust chain only. Trust signatures from
 the Gossamer Spider Web of Trust Top-Level Key will be revoked.
 
@@ -470,9 +239,9 @@ To preserve the identity assurance earned through past participation, the
 Gossamer Spider Web of Trust Top-Level Key will issue a certification signature
 to any qualified userid.
 
-1.8 Confidentiality
+=== 1.8 Confidentiality ===
 
-The GSWoT Document Sharing Key ( 0xF10CACE18A241470, aka GSWoT Correspondance
+The GSWoT Document Sharing Key (0xF10CACE18A241470, aka GSWoT Correspondance
 Key) shall be used to protect personal information published on any remotely
 accessible media and including the transmission of email. The purpose of the
 GSWoT Document Sharing Key is to reduce the ciphertext size by limiting
@@ -497,14 +266,9 @@ interfering with ease-of-use through passphrase caching.
 The public key certificate should not be submitted to any public key server
 (ref.  Section 1.7.1).
 
- 
+=== 1.9 Presence ===
 
- 
-
-1.9 Presence
-
-The Official Home of the Gossamer Spider Web of Trust is  http://www.gswot.org/
-.
+The Official Home of the Gossamer Spider Web of Trust is <http://www.gswot.org>.
 
 There are four (4) mail lists representing the Gossamer Spider Web of Trust:
 
@@ -515,9 +279,9 @@ model in general. GSIntroducers are encouraged to subscribe to this forum to
 assist in responding to questions from the public. Posts should be
 clear-signed.
 
-The mailing list is mirrored on Gmane Mail to News news://news.gmane.org/
-gmane.comp.security.pgp.gswot http://news.gmane.org/thread.php?group=
-gmane.comp.security.pgp.gswot 
+The mailing list is mirrored on Gmane Mail to News
+<news://news.gmane.org/gmane.comp.security.pgp.gswot>
+<http://news.gmane.org/thread.php?group=gmane.comp.security.pgp.gswot>
 
 
 GSIntroducer - introducer-subscribe@lists.gswot.org
@@ -541,11 +305,7 @@ GSWoT-ARC - arc-subscribe@lists.gswot.org
 This web presence is restricted to GSIntroducers who opt to serve on the
 Application Review Committee.
 
- 
-
- 
-
-2. Affiliates, Partners
+== 2. Affiliates, Partners ==
 
 Affiliates and Partners are persons, organizations and commercial entities
 whose application or invitation to the Web of Introducers has been mutually
@@ -557,11 +317,7 @@ within their organization. The Affiliated Registrar's signing key is then
 certified by the Gossamer Spider Web of Trust Top-Level Key as a Level 02
 Introducer.
 
- 
-
- 
-
-3. Recognized Authorities
+== 3. Recognized Authorities ==
 
 The geographic dispersal of GSIntroducers severely limits the ability of the
 Web of Introducers to meet with subscribers to authenticate their identity. For
@@ -570,11 +326,7 @@ Introducers, the reliance upon Certification Authorities (CA) and other strict
 authentication processes has provided the means to satisfy our requirement for
 an extensive certification of identity.
 
- 
-
- 
-
-3.1 Dynamic List of Authorities
+=== 3.1 Dynamic List of Authorities ===
 
 The following list of Recognized Authorities is not static. Applicants and
 subscribers whose identity has been authenticated to earn a certificate product
@@ -585,32 +337,26 @@ inclusion under this Section to improve their qualification. (see also  Section
 Certificate products from the following Authorities are acceptable proofs of
 identity:
 
-CAcert ECCP ( www.cacert.org)
-*Trusted* certificates (50 or more trust points)
+CAcert ECCP <www.cacert.org>
+**Trusted** certificates (50 or more trust points)
 
-CAcert High Trust OpenPGP ( www.cacert.org)
+CAcert High Trust OpenPGP <www.cacert.org>
 Signing KeyID:  0xD2BB0D0165D0FD58
 
 *Only signatures issued after June 1, 2007 are accepted
 
-Juricert ( www.juricert.com) Authenticated Adobe certificates
+Juricert <www.juricert.com> Authenticated Adobe certificates
 
-Juricert ( www.juricert.com) Authenticated IDscript ( www.idscript.com)
-TrustMint 
+Juricert <www.juricert.com> Authenticated IDscript ( www.idscript.com)
+TrustMint
 
- 
-
-4. Certification by GSIntroducers (Key Signing)
+== 4. Certification by GSIntroducers (Key Signing) ==
 
 The Gossamer Spider Web of Trust aims to introduce only positively certified
 keys which have been scrutinized to belong to authentic individuals,
 organizations or other entities.
 
- 
-
- 
-
-4.1 Third Party Reliance
+=== 4.1 Third Party Reliance ===
 
 The Gossamer Spider Web of Introducers strives to maintain strong,
 evidence-based certifications. Certification quality is to be regarded as "low
@@ -620,20 +366,14 @@ certifications of the Web of Introducers. Relying parties are urged to require
 additional certification for commerce, legal, and mission critical
 applications.
 
- 
+=== 4.2 Technical Limitations ===
 
- 
-
-4.2 Technical Limitations
-
-The PGP (Pretty Good Privacy) application by PGP Corporation ( www.pgp.com)
+The PGP (Pretty Good Privacy) application by PGP Corporation <www.pgp.com>
 does not support variable certification signature types. PGP generates only
 generic (type 0x10) certification signatures. GnuPG (GNU Privacy Guard) by GNU
-( www.gnupg.org) does support variable certification signature types. 
+<www.gnupg.org> does support variable certification signature types.
 
- 
-
-4.3 Signature Discrimination
+=== 4.3 Signature Discrimination ===
 
 All generic certification signatures applied by GSIntroducers shall be
 determined to be a casual certification of a userid and public key (type 0x12).
@@ -643,22 +383,14 @@ GSIntroducers who have access to GnuPG must apply a positive certification
 signature (type 0x13) with the exception of remote certifications (see  Section
 4.5).
 
- 
-
- 
-
-4.4 Traditional Key Signing
+=== 4.4 Traditional Key Signing ===
 
 A GSIntroducer will meet with a key owner in person to witness appropriate and
 sufficient documentation that is commonly held to provide evidence of identity
 (EOI) in the key owner's homeland. The EOI must include at least one form of
 government-issued photo identification.
 
- 
-
- 
-
-4.5 Remote Certification
+=== 4.5 Remote Certification ===
 
 A GSIntroducer may certify the public key of an owner who successfully
 authenticates with a digital signing product issued or otherwise certified by a
@@ -667,11 +399,7 @@ certification signature to any key that is being remotely certified.
 GSIntroducers who use PGP exclusively will apply a certification signature in
 the general manner with a generic certification signature (type 0x10).
 
- 
-
- 
-
-4.5.1 Limitations of Remote Certification
+==== 4.5.1 Limitations of Remote Certification ====
 
 A GSIntroducer must refuse to remotely certify a subscriber's key that contains
 two (2) GSIntroducer signatures that were applied under the Remote
@@ -682,11 +410,7 @@ Traditional Key Signing.
 
 This rule does not apply to reciprocal signing within the Web of Introducers.
 
- 
-
- 
-
-4.6 Multiple UserID's
+=== 4.6 Multiple UserID's ===
 
 The OpenPGP certificate format permits the generation of multiple userid's
 associated with a single primary key. GSIntroducers must certify only userid's
@@ -697,21 +421,13 @@ but this should not indicate that the Photo ID does not bear a true likeness of
 the public key owner. Likewise, untested email addresses will not be certified
 but should not be interpreted to be invalid.
 
- 
-
- 
-
-4.7 Trust Signatures
+=== 4.7 Trust Signatures ===
 
 GSIntroducers are free to extend their personal web of trust using their GSWoT
 signing key by applying trust signatures to the keys they trust as introducers
 (entire  Section 4 applies).
 
- 
-
- 
-
-4.7.1 Trust Signing of GSIntroducers
+==== 4.7.1 Trust Signing of GSIntroducers ====
 
 GSIntroducers must apply an appropriate certification signature (type 0x12 or
 type 0x13) including Level 01 trust to the keys of other GSIntroducers.
@@ -723,135 +439,62 @@ immediately following installation to the Web of Introducers.
 The new GSIntroducer is encouraged to seek additional signature exchanges with
 the remaining GSIntroducers.
 
- 
-
- 
-
-5. Policy Sharing
+== 5. Policy Sharing ==
 
 Trust policies can be shared between OpenPGP users through trust signatures.
 GnuPG users can also manage trust policies exclusively through explicit signing
 of keys on the local keyring. Trust policies can be shared between GnuPG users
 using the classic trust model through the import of ownertrust export files.
 
- 
+== Definitions ==
 
- 
-
-Definitions
-
- 
-
-> Authentication
-  see also; Message Authentication
-            Sender Authentication
-
-The verification of the identity of a person or organization.
-
-
-> Certificate
-
-A document containing a cryptographic key, personally identifying information,
+; Authentication see also; Message Authentication Sender Authentication
+: The verification of the identity of a person or organization.
+; Certificate
+: A document containing a cryptographic key, personally identifying information,
 and other information certified by the owner (self-signed certificate) or a
 signing authority.
-
-
-> Certification Authority (CA)
-  also; Certificate Authority
-
-An organization that certifies certificate material; may also perform
+; Certification Authority (CA) also; Certificate Authority
+: An organization that certifies certificate material; may also perform
 authentication services.
-
-
-> Certificate Revocation List
-
-A document issued by a Certification Authority that lists subscriber keys that
+; Certificate Revocation List
+: A document issued by a Certification Authority that lists subscriber keys that
 have been revoked.
-
-
-> Day
-
-A period of twenty-four (24) hours beginning at midnight, UTC.
-
-
-> Document
-
-A record that conveys information.
-
-
-> Evidence of Identity (EOI)
-
-A document that substantiates a claim to identity.
-
-
-> Keypair
-
-A cryptographic public key and corresponding private key.
-
-
-> Message Authentication
-
-A method of proving the source of a message is authentic; unchanged.
-
-
-> OpenPGP
-  also; PGP
-  also; PGP Message Format
-  also; Inline PGP
-
-A proposed IETF standard for the exchange of cryptographic messages and
+; Day
+: A period of twenty-four (24) hours beginning at midnight, UTC.
+; Document
+: A record that conveys information.
+; Evidence of Identity (EOI)
+: A document that substantiates a claim to identity.
+; Keypair
+: A cryptographic public key and corresponding private key.
+; Message Authentication
+: A method of proving the source of a message is authentic; unchanged.
+; OpenPGP also; PGP also; PGP Message Format also; Inline PGP
+: A proposed IETF standard for the exchange of cryptographic messages and
 certificate material.
-
-
-> PGP/MIME
-
-A MIME implementation of the OpenPGP message format.
-
-
-> Public Key
-  also; Certificate
-
-The shared key belonging to a keypair; used for encryption of documents to or
+; PGP/MIME
+: A MIME implementation of the OpenPGP message format.
+; Public Key also; Certificate
+: The shared key belonging to a keypair; used for encryption of documents to or
 decryption of signatures generated by the corresponding private key.
-
-
-> Private Key
-
-The key that is required for generating digital signatures and decryption of
+; Private Key
+: The key that is required for generating digital signatures and decryption of
 documents encrypted to the corresponding public key.
-
-
-> Recognized [Entity]
-
-A person, organization or commercial entity whose signing key and certification
+; Recognized [Entity]
+: A person, organization or commercial entity whose signing key and certification
 practices and/or authentication standards is observed to meet or exceed those
 set forth in this document.
-
-> Registrar
-
-An admitting officer. A person responsible for maintaining records and
+; Registrar
+: An admitting officer. A person responsible for maintaining records and
 admittance.
-
-
-> S/MIME
-
-An IETF standard for secure email.
-
-
-> Sender Authentication
-
-A method of proving the authorship of a message.
-
-
-> Subscriber
-
-A person, organization or commercial entity who has requested certification of
+; S/MIME
+: An IETF standard for secure email.
+; Sender Authentication
+:A method of proving the authorship of a message.
+; Subscriber
+: A person, organization or commercial entity who has requested certification of
 a public key by a signing authority.
-
-
-> X.509
-
-An IETF standard format for the storage of cryptographic key material and
+; X.509
+: An IETF standard format for the storage of cryptographic key material and
 Certificate Revocation Lists.
-
-
