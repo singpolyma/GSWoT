@@ -95,8 +95,10 @@ signing key certified and entered into the Web of Introducers. Organizations
 and commercial entities are referred to  Section 2 - Affiliates, Partners. An
 individual who performs assurances for a web of trust digital signature product
 identified in  Section 3.1; or is a Notary Public in Canada or the United
-States; or has earned three (3) GSIntroducer certifications can make
-application to the Web of Introducers.
+States; or has earned a certification from the CACert OpenPGP root key whose
+fingerprint is A31D 4F81 EF4E BD07 B456  FA04 D2BB 0D01 65D0 FD58 and one (1)
+GSIntroducer certification; or has earned three (3) GSIntroducer certifications
+can make application to the Web of Introducers.
 
 === 1.3.1 Making Application ===
 
