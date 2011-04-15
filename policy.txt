@@ -117,44 +117,18 @@ Upon successful completion of the application process, a new GSIntroducer is
 formally introduced into the Web of Introducers. The method of delivery of the
 introduction may change from time to time, however the authentication of
 material and keys is to be considered critical and must comply with  Sections
-1.5 and  1.5.1.
+1.5.
 
-=== 1.5 Registrar and Review Committee ===
+=== 1.5 Registrar ===
 
-The Registrar will receive and forward an application to the Application Review
-Committee. A new GSIntroducer will be installed only after a quorum of
-recipients have validated the candidate's credentials and accepted the
-application. Recipients will affirm their acceptance by issuing a digital
-signature applied to the applicant's public key to be included in the
-Registration Announcement. The Application Review Committee may initiate the
-exchange of signatures with the new GSIntroducer upon reception of the
-Registration Announcement, and the new member should strive to reciprocate all
-trust signatures included in the Registration Announcement without delay. See
-Section 4.7.1, "Trust Signing of GSIntroducers" for further details.
+The Registrar will receive an application and forward it to the GSIntroducer
+mailing list after verifying that the applicant fits the requirements of
+Section 1.3.  A new GSIntroducer will be installed only after 5 days with
+no objections being voiced on-list.  The absence of objections to the
+application will be taken to mean that members agree with the Registrar's
+conclusion that the application meets the requirements of Section 1.3.
 
-==== 1.5.1 The Application Review Committee ====
-
-The Review Committee is comprised of not fewer than five (5) active
-GSIntroducers who have volunteered to review registration applications.
-Recipients (Committee Members) must honor receipt requests for registration
-applications so that the Registrar can discover if a review quorum will be
-satisfied. Receipt requests must be acknowledged within forty-eight (48) hours
-of being sent.
-
-Registration applications must be reviewed and responded to the Registrar
-within forty-eight (48) hours of acknowledgement. Recipients will affirm their
-validation or failure to validate the application using the prescribed form.
-Approval by no fewer than three (3) recipients and where no objections are
-submitted in at least 48 hours shall warrant the recommendation to enroll the
-applicant's signature key in the Web of Introducers.
-
-"Hours" in this and all Sections shall be reconciled according to this
-document's definition of "Day". For the purpose of notice, a document is deemed
-sent at midnight UTC on the calendar day under UTC at the time of submission
-(ie, a document sent at Jan 01 23:00 EDT (Jan 02 04:00 UTC) is deemed sent at
-Jan 02 24:00 UTC). Expiry and maturity occur at midnight UTC.
-
-==== 1.5.2 The Registration Announcement ====
+==== 1.5.1 The Registration Announcement ====
 
 The Registration Announcement serves to introduce a new GSIntroducer to the Web
 of Introducers. The document will include information describing the new
@@ -305,11 +279,6 @@ publish general announcements and most importantly, Registration Announcements.
 Subscription to this mailing list is mandatory. GSIntroducers must maintain a
 subscription with active delivery enabled. Posts should be clear-signed.
 
-
-GSWoT-ARC - arc-subscribe@lists.gswot.org
-This web presence is restricted to GSIntroducers who opt to serve on the
-Application Review Committee.
-
 == 2. Affiliates, Partners ==
 
 Affiliates and Partners are persons, organizations and commercial entities
@@ -437,12 +406,8 @@ signing key by applying trust signatures to the keys they trust as introducers
 GSIntroducers must apply an appropriate certification signature (type 0x12 or
 type 0x13) including Level 01 trust to the keys of other GSIntroducers.
 
-A new GSIntroducer will exchange signatures with all GSIntroducers in the
-Application Review Committee who have signed the new GSIntroducer's key
-immediately following installation to the Web of Introducers.
-
-The new GSIntroducer is encouraged to seek additional signature exchanges with
-the remaining GSIntroducers.
+The new GSIntroducer is encouraged to seek signature exchanges with
+GSIntroducers.
 
 == 5. Policy Sharing ==
 
