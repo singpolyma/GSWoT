@@ -23,8 +23,13 @@ confidence that starts with its Web of Introducers (individually called,
 
 The GSWoT top-level key is used exclusively to certify the signing key of
 Recognized Authorities, Affiliates and individual GSIntroducers. The Gossamer
-Spider Web of Trust Top-Level Key should be identified solely by it's
-Fingerprint:  D08CB376DE5F9609AAEB67637A921BC23C4A1809.
+Spider Web of Trust Top-Level Key should be identified solely by its
+Fingerprint: 59F5 2214 8745 E548 7F41  4E1C 6BCB 9B4B 8875 FB7F
+
+The old Top-Level Key should still be considered valid and solely identified
+by its Fingerprint: D08C B376 DE5F 9609 AAEB  6763 7A92 1BC2 3C4A 1809
+
+No new signatures will be issued by the old key after 2011-04-10.
 
 To install the Gossamer Spider Web of Trust vertically, the Gossamer Spider Web
 of Trust Top-Level Key must be imported into a compatible OpenPGP keyring and
