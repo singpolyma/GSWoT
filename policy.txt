@@ -88,6 +88,16 @@ The email part of the GSIntroducer ID (GSID) is an internal artifact and may
 not indicate a valid email address to relying parties. GSIntroducers may opt to
 enable their gswot.org mail service.
 
+==== 1.2.4 Roll Call ====
+
+There will be periodic roll calls which will be announced on the announce
+mail list (see 1.9).  Failure to reply to reply to a roll call within 50 days
+leaves the organization no choice but to assume the GSIntroducer's private key
+may have been compromised and will result in all GSWoT root key signatures
+being revoked from the GSIntroducer's key(s) and that GSIntroducer's membership
+will be terminated.  The GSIntroducer is free to re-apply for membership should
+they wish to be a member of the organization again.
+
 === 1.3 Becoming a GSIntroducer ===
 
 A person, organization or commercial entity can make application to have a
