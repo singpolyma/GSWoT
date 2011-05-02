@@ -1,0 +1,34 @@
+By submitting this application I warrant that I will be diligent in
+protecting my private key, and certify only those keys whose owners'identity
+I have verified in person or who possess and have access to the private key
+of an approved digital signature product. I have read and understood the
+Gossamer Spider Web of Trust Practice Guidelines. I am eighteen (18) years
+of age or older.
+
+*****************************************************************
+
+OpenPGP Key Info (multiple keys allowed)
+
+Short key ID:
+KeyID (long keyid):
+Fingerprint:
+
+Contact Info
+
+Full Name (Last, First [Initial]):
+City, State, Country:
+Time Zone (+/-hh:mm TZD):
+Email:
+HTTP:
+XMPP:
+Skype:
+AIM:
+ICQ:
+MSN:
+Yahoo:
+SIP:
+Tel:
+Other:
+
+[ ] Prefer PGP/MIME
+[ ] Prefer PGP inline
