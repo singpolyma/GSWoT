@@ -148,7 +148,8 @@ The new GSIntroducer may initiate key exchanges with the GSIntroducers listed
 in the directory that have not already exchanged keys following the application
 review process.
 
-The following is a guide to key exchange:
+Mutual exchange of trust signatures among all GSIntroducers is mandatory and
+will be conducted as follows:
 
 1. Sign the GSIntroducer's key with a trust signature to a depth of one (1)
 (Level 01 Introducer). Sign the userid conforming to the conditions in any of
